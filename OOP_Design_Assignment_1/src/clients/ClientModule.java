@@ -1,5 +1,6 @@
 package clients;
 
+import domain.Accountant;
 import domain.Employee;
 import domain.dao.EmployeeDAO;
 import reporting.EmployeeReportFormatter;
@@ -8,7 +9,7 @@ import reporting.FormatType;
 public class ClientModule {
 
 	public static void main(String[] args) {
-		Employee peggy = new Employee(1, "peggy", "acounting", true);
+		Employee peggy = new Accountant(1, "peggy", "acounting", true);
 		ClientModule.hireNewEmployee(peggy);
 		printEmployeeReport(peggy, FormatType.XML);
 	}
