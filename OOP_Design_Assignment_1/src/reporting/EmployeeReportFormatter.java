@@ -2,12 +2,14 @@ package reporting;
 
 import domain.Employee;
 
-public class EmployeeReportFormatter {
-	
-	Employee anEmployee = new Employee();
-	
-	public void getFormattedEmployee(){
-		
+public class EmployeeReportFormatter extends ReportFormatter {
+
+	public EmployeeReportFormatter(Employee employee, FormatType formatType) {
+		super(employee, formatType);
+	}
+
+	public String getFormattedEmployee() {
+		return getFormattedValue();
 	}
 
 }
