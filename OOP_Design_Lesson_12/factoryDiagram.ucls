@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="factoryDesignPattern.Vehicle" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/Vehicle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="80" width="122" x="829" y="391"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="factoryDesignPattern.App" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/App.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="125" x="302" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="factoryDesignPattern.Truck" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/Truck.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="122" x="667" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="4" language="java" name="factoryDesignPattern.VehicleType" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/VehicleType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="152" width="160" x="467" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="5" language="java" name="factoryDesignPattern.Car" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/Car.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="122" x="829" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="factoryDesignPattern.ElectricCar" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/ElectricCar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="122" x="991" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="factoryDesignPattern.VehicleFactory" project="OOP_Design_Lesson_12" 
+    file="/OOP_Design_Lesson_12/src/factoryDesignPattern/VehicleFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="204" x="1153" y="199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="8">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
