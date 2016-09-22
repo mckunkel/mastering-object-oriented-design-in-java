@@ -1,5 +1,4 @@
-
-public class M4HotWaterSource extends HotWaterSource {
+public class M4HotWaterSource extends HotWaterSource implements Pollable {
 
 	private CoffeeMakerAPI api;
 
@@ -14,21 +13,33 @@ public class M4HotWaterSource extends HotWaterSource {
 	}
 
 	@Override
-	public void start() {
+	public void startBrewing() {
 		api.setReliefValveState(api.VALVE_CLOSED);
 		api.setBoilerState(api.BOILER_ON);
 	}
 
 	@Override
-	public void pause() {
-		// TODO Auto-generated method stub
+	public void poll() {
+		int boilerstatus = api.getBoilerStatus();
+		if (isBrewing) {
+			if (boilerstatus == api.BOILER_EMPTY) {
+				api.setBoilerState(api.BOILER_EMPTY);
+				api.setReliefValveState(api.VALVE_CLOSED);
+				declareDone();
+			}
+		}
+	}
 
+	@Override
+	public void pause() {
+		api.setBoilerState(api.BOILER_OFF);
+		api.setReliefValveState(api.VALVE_OPEN);
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
-
+		api.setBoilerState(api.BOILER_ON);
+		api.setReliefValveState(api.VALVE_CLOSED);
 	}
 
 }
