@@ -1,5 +1,5 @@
 
-public class M4ContainmentVessel extends ContainmentVessel {
+public class M4ContainmentVessel extends ContainmentVessel implements Pollable {
 
 	private CoffeeMakerAPI api;
 	private boolean isBrewing;
@@ -18,6 +18,12 @@ public class M4ContainmentVessel extends ContainmentVessel {
 	@Override
 	public void start() {
 		isBrewing = true;
+	}
+
+	@Override
+	public void poll() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
